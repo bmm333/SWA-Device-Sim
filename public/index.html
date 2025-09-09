@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wardrobe Simulator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Smart Wardrobe Simulator</h1>
+            <p>Simple RFID & Heartbeat Testing Tool</p>
+        </header>
+
+        <div class="main-card">
+            <div class="form-group">
+                <label for="apiKey">API Key</label>
+                <input type="text" id="apiKey" placeholder="Enter your API key" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rfidTag">RFID Tag</label>
+                <input type="text" id="rfidTag" placeholder="Enter RFID tag (e.g. TAG001)" required>
+            </div>
+
+            <div class="button-group">
+                <button id="sendHeartbeat" class="btn btn-info">Send Heartbeat</button>
+                <button id="sendRfidScan" class="btn btn-success">Send RFID Scan</button>
+            </div>
+        </div>
+
+        <div id="statusMessage" class="status-message hidden"></div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
