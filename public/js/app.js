@@ -1,6 +1,6 @@
 class SmartWardrobeSimulator {
     constructor() {
-        this.backendUrl = 'http://localhost:3001';
+        this.backendUrl = 'https://esameweb.onrender.com';
         this.serialNumber = 'SW-SIM-001';
         this.init();
     }
